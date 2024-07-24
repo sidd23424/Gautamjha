@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up, Login, and Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+<script src ="crash.js"></script>
+
+<div id="signupContainer">
+    <form id="signupForm">
+        <h2>Sign Up</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="repassword">Re-enter Password:</label>
+        <input type="password" id="repassword" name="repassword" required>
+
+        <button type="button" onclick="signup()">Sign Up</button>
+
+        <p>or</p>
+
+        <button type="button" onclick="showLogin()">Login</button>
+    </form>
+
+    <div id="LoginContainer" style="display: none;">
+        <form id="LoginForm">
+            <h2>Login</h2>
+            <label for="LoginUsername">Username:</label>
+            <input type="text" id="LoginUsername" name="LoginUsername" required>
+
+            <label for="LoginPassword">Password:</label>
+            <input type="password" id="LoginPassword" name="LoginPassword" required>
+
+            <button type="button" onclick="Login()">Login</button>
+        </form>
+    </div>
+</div>
+
+<div id="loginContainer" style="display: none;">
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" name="loginUsername" required>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <p><a href="javascript:void(0);" onclick="showForgotPassword()">Forgot Password?</a></p>
+    </form>
+</div>
+
+<div id="thankYouMessage" style="display: none;">
+    <h2>Thank You!</h2>
+    <p>For visiting my website.</p>
+</div>
+
+<div id="aboutComputerHistory" style="display: none;">
+    <h2>About Computer History (1980-2023)</h2>
+    <p>Computers and electronics play an enormous role in today's society, impacting everything from communication and medicine to science. </p>
+</div>
+
+<div id="forgotPasswordContainer" style="display: none;">
+    <form id="forgotPasswordForm">
+        <h2>Forgot Password</h2>
+        <label for="forgotPasswordNumber">Phone Number:</label>
+        <input type="tel" id="forgotPasswordNumber" name="forgotPasswordNumber" required>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <label for="confirmNewPassword">Confirm New Password:</label>
+        <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" name="otp" required>
+
+        <button type="button" onclick="changePassword()">Change Password</button>
+
+        <p><a href="javascript:void(0);"> <button type="button"  onclick="showLogin()" >login</button></a></p>
+    </form>
+</div>
+
+</body>
+</html>
